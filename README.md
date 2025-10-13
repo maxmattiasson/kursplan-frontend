@@ -18,3 +18,14 @@ Vi ska skapa en modern, interaktiv sida som ersätter nuvarande Excel-filer.
   - `--secondary-color:` `rgb(76, 100, 255)` ![#4C64FF](https://img.shields.io/badge/-%234C64FF.svg?style=flat-square&labelColor=%234C64FF&color=%234C64FF)
   - `--accent-color:` `rgb(30, 37, 81)` ![#1E2551](https://img.shields.io/badge/-%231E2551.svg?style=flat-square&labelColor=%231E2551&color=%231E2551)
   - `--gray-color:` `rgb(123, 124, 129)` ![#7B7C81](https://img.shields.io/badge/-%237B7C81.svg?style=flat-square&labelColor=%237B7C81&color=%237B7C81)
+
+## Roller i teamet
+
+| Namn             | Roll          | Ansvar                                                                  |
+| ---------------- | ------------- | ----------------------------------------------------------------------- |
+| Max Mattiasson   | Projektägare  | Håller koll på helheten, ansvarar för GitHub och merges till main.      |
+| Elias            | Scrum Master  | Leder standups, håller tempo i teamet och sätter timer vid möten.       |
+| Alyanna Karlsson | Desigansvarig | Tar fram layout och ser till att sidan känns enhetlig.                  |
+| Sascha Bergenås  | Utvecklare    | Deltar i kodning, bidrar till funktioner och hjälper till med struktur. |
+| Björn Boman      | Utvecklare    | Deltar i kodning, bidrar till funktioner och hjälper till med struktur. |
+| Isabelle Franzén | Utvecklare    | Deltar i kodning, bidrar till funktioner och hjälper till med struktur. |
