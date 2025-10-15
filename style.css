@@ -40,11 +40,6 @@ section {
   margin: 2rem 0;
 }
 
-@media only screen and (min-width: 680px) {
-  section {
-    padding: 4rem;
-  }
-}
 /* Grades*/
 #wellDone {
   margin-left: 1rem;
@@ -73,4 +68,100 @@ section {
 }
 #grading-support {
   border-radius: 6px;
+
+/* Footer */
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+footer p {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+footer .line {
+  font-weight: 800;
+  color: var(--black-color);
+}
+
+footer .created-by {
+  text-align: center;
+}
+
+footer .created-by p {
+  margin-bottom: 1.4rem;
+}
+
+footer .text-bold {
+  font-weight: 400;
+}
+
+footer .portrait-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .portrait {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
+.divider {
+  width: 80%;
+  margin: 1.5rem auto;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+}
+
+@media only screen and (min-width: 680px) {
+  section {
+    padding: 4rem;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 3rem;
+    margin: 0 auto;
+  }
+
+  footer h3 {
+    font-size: 1.6rem;
+  }
+
+  footer .footer-info {
+    text-align: center;
+  }
+
+  footer .portrait {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+    border: 5px solid var(--gray-color);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+  }
+
+  footer .portrait:hover {
+    transform: scale(1.05);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
 }
