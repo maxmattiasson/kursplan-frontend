@@ -45,3 +45,27 @@ section {
     padding: 4rem;
   }
 }
+/* Grades*/
+#wellDone {
+  margin-left: 1rem;
+}
+#grades li {
+  margin: 1rem;
+}
+#grades p {
+  margin-top: 1rem;
+}
+#gradingTitle {
+  cursor: pointer;
+  font-size: large;
+}
+#gradingTitle:hover {
+  color: var(--secondary-color);
+}
+#grades {
+  display: none;
+  color: pink;
+}
+#grades.active {
+  display: block;
+}
