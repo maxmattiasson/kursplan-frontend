@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('#learning-goals .slide');
   const prevBtn = document.getElementById('prev-slide');
@@ -28,3 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // use to initialize slideshow
   showSlide(currentSlide);
 });
+
+// Grades
+const dropdown = document.getElementById("grades");
+const title = document.getElementById("gradingTitle");
+
+title.addEventListener("click", () => {
+  dropdown.classList.toggle("active");
+  title.classList.toggle("active");
+});
+
