@@ -68,15 +68,35 @@ footer .line {
 }
 
 footer .created-by {
+  text-align: center;
   margin-top: 2rem;
+}
+
+footer .created-by p {
+  margin-bottom: 1.4rem;
 }
 
 footer .text-bold {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 680px) {
+footer .portrait-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .portrait {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* @media only screen and (min-width: 680px) {
   section {
     padding: 4rem;
   }
 }
+ */
