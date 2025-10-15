@@ -45,3 +45,30 @@ section {
     padding: 4rem;
   }
 }
+/* support*/
+
+#supports li {
+  margin: 1rem;
+}
+#supports p {
+  margin-top: 1rem;
+}
+#supportTitle {
+  cursor: pointer;
+  font-size: large;
+}
+#supportTitle:hover {
+  color: var(--secondary-color);
+}
+#supports {
+  display: none;
+  color: var(--black-color);
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+#supports.active {
+  display: block;
+}
+#grading-support {
+  border-radius: 6px;
+}
