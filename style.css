@@ -45,3 +45,38 @@ section {
     padding: 4rem;
   }
 }
+
+/* Footer */
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+footer p {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+footer .line {
+  font-weight: 800;
+  color: var(--black-color);
+}
+
+footer .created-by {
+  margin-top: 2rem;
+}
+
+footer .text-bold {
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 680px) {
+  section {
+    padding: 4rem;
+  }
+}
