@@ -40,11 +40,34 @@ section {
   margin: 2rem 0;
 }
 
-@media only screen and (min-width: 680px) {
-  section {
-    padding: 4rem;
-  }
+/* Grades*/
+#wellDone {
+  margin-left: 1rem;
 }
+#grades li {
+  margin: 1rem;
+}
+#grades p {
+  margin-top: 1rem;
+}
+#gradingTitle {
+  cursor: pointer;
+  font-size: large;
+}
+#gradingTitle:hover {
+  color: var(--secondary-color);
+}
+#grades {
+  display: none;
+  color: var(--black-color);
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+#grades.active {
+  display: block;
+}
+#grading-support {
+  border-radius: 6px;
 
 /* Footer */
 
@@ -108,6 +131,10 @@ footer .portrait {
 }
 
 @media only screen and (min-width: 680px) {
+  section {
+    padding: 4rem;
+  }
+  
   footer {
     display: flex;
     flex-direction: column;
