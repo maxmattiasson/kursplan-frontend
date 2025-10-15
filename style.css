@@ -68,7 +68,7 @@ section {
 }
 #grading-support {
   border-radius: 6px;
-
+}
 /* Footer */
 
 footer {
@@ -134,7 +134,7 @@ footer .portrait {
   section {
     padding: 4rem;
   }
-  
+
   footer {
     display: flex;
     flex-direction: column;
