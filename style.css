@@ -39,6 +39,41 @@ section {
   padding: 2rem;
   margin: 2rem 0;
 }
+/* Kunskapskontroll */
+#knowledge-check h1 {
+  text-align: center;
+}
+.kunskap-cont {
+  display: flex;
+}
+#kunskap-summativ > *,
+#kunskap-formativ > * {
+  padding: 1rem;
+}
+#kunskap-summativ,
+#kunskap-formativ {
+  transition: opacity 1s ease;
+  overflow: hidden;
+}
+.kunskap-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.k-btn {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 5px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.k-active {
+  background-color: var(--gray-color);
+}
+.k-hidden {
+  opacity: 0;
+  max-width: 0;
 
 /* lärendemål layout -yanna */
 
@@ -181,6 +216,7 @@ footer .portrait {
     rgba(255, 255, 255, 0.3),
     transparent
   );
+
 
 }
 
