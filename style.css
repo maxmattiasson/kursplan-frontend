@@ -246,12 +246,12 @@ footer .portrait {
   background-position: center;
   width: 100%;
   height: auto;
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-  }
+}
+#hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
 }
 
 /* Media queries */
