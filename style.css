@@ -338,6 +338,7 @@ footer .portrait {
   }
   #grading-support {
     display: flex;
+    justify-content: center;
   }
   .col-1 {
     flex: 1;
