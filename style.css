@@ -157,19 +157,19 @@ nav a {
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
-.heading{
+.heading {
   text-align: center;
 }
 
-.slide{
+.slide {
   background: linear-gradient(50deg, var(--gray-color), var(--secondary-color));
- /* background: var(--secondary-color); */
+  /* background: var(--secondary-color); */
   border-radius: 10px;
   padding: 1rem;
 }
 
-.button-container{
-  display:flex;
+.button-container {
+  display: flex;
   justify-content: center;
   gap: 1rem;
   padding: 1rem 0;
@@ -188,13 +188,12 @@ button {
 }
 
 /* will be highlighed when clicked and opened */
-button:hover, 
+button:hover,
 button:focus {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Grades*/
 #wellDone {
@@ -349,10 +348,8 @@ footer .portrait {
 /* Media queries */
 @media only screen and (min-width: 1024px) {
   #grading {
-    width: 666px;
   }
   #support {
-    width: 666px;
   }
   #grading-support {
     display: flex;
