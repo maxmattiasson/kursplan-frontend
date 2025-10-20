@@ -215,7 +215,7 @@ button:focus {
 }
 #grades {
   display: none;
-  color: var(--accent-color);
+  color: var(--black-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.3s ease;
 }
@@ -239,7 +239,7 @@ button:focus {
 }
 #supports p {
   margin-top: 1rem;
-  color: var(--accent-color);
+  color: var(--black-color);
 }
 #supportTitle {
   cursor: pointer;
