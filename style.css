@@ -159,6 +159,7 @@ button:hover {
 }
 #grades p {
   margin-top: 1rem;
+  color: var(--black-color);
 }
 #gradingTitle {
   cursor: pointer;
@@ -169,7 +170,7 @@ button:hover {
 }
 #grades {
   display: none;
-  color: var(--black-color);
+  color: var(--accent-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.3s ease;
 }
@@ -178,6 +179,8 @@ button:hover {
 }
 #grading {
   padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
 }
 /* Support*/
 #grading-support {
@@ -191,6 +194,7 @@ button:hover {
 }
 #supports p {
   margin-top: 1rem;
+  color: var(--accent-color);
 }
 #supportTitle {
   cursor: pointer;
@@ -211,6 +215,9 @@ button:hover {
 
 #support {
   padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 /* Footer */
