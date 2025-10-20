@@ -346,19 +346,7 @@ footer .portrait {
 }
 
 /* Media queries */
-@media only screen and (min-width: 1024px) {
-  #grading {
-  }
-  #support {
-  }
-  #grading-support {
-    display: flex;
-    justify-content: center;
-  }
-  .col-1 {
-    flex: 1;
-  }
-}
+
 @media only screen and (min-width: 680px) {
   section {
     padding: 4rem;
@@ -409,5 +397,16 @@ footer .portrait {
     transform: scale(1.05);
     border-color: var(--secondary-color);
     color: var(--secondary-color);
+  }
+  #grading {
+    width: 800px;
+  }
+  #support {
+    width: 800px;
+  }
+  #grading-support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
