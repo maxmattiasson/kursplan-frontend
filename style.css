@@ -219,9 +219,7 @@ button:hover {
   border-radius: 1rem;
   margin-top: 1rem;
 }
-.col-1 {
-  flex: 1;
-}
+
 /* Footer */
 
 footer {
@@ -309,6 +307,12 @@ footer .portrait {
   }
   #support {
     width: 666px;
+  }
+  #grading-support {
+    display: flex;
+  }
+  .col-1 {
+    flex: 1;
   }
 }
 @media only screen and (min-width: 680px) {
