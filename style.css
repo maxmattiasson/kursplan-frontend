@@ -40,15 +40,32 @@ section {
   margin: 2rem 0;
 }
 /* Kunskapskontroll */
+
 #knowledge-check h1 {
   text-align: center;
+  padding-top: 1rem;
+}
+#knowledge-check {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 .kunskap-cont {
   display: flex;
+  padding: 1rem;
 }
 #kunskap-summativ > *,
 #kunskap-formativ > * {
   padding: 1rem;
+  color: var(--black-color);
+}
+#kunskap-summativ ul,
+#kunskap-formativ ul {
+  margin-left: 20px;
 }
 #kunskap-summativ,
 #kunskap-formativ {
@@ -62,18 +79,23 @@ section {
 }
 
 .k-btn {
-  background-color: var(--secondary-color);
+  padding: 15px 20px;
+  margin: 10px 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white-color);
+  background-color: var(--accent-color);
   border: none;
-  padding: 5px 25px;
-  border-radius: 30px;
+  border-radius: 8px;
   cursor: pointer;
 }
 .k-active {
-  background-color: var(--gray-color);
+  background-color: var(--secondary-color);
 }
 .k-hidden {
   opacity: 0;
   max-width: 0;
+  max-height: 0;
 }
 /* lärendemål layout -yanna */
 
@@ -252,11 +274,34 @@ footer .portrait {
   );
 }
 
+/* Hero section (in header) */
+
+#hero {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/hero-small.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+#hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+/* Media queries */
+
 @media only screen and (min-width: 680px) {
   section {
     padding: 4rem;
   }
-
+  #hero {
+    background-image: url(assets/hero.png);
+  }
   footer {
     display: flex;
     flex-direction: column;
