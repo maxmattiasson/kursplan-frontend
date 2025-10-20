@@ -43,6 +43,16 @@ section {
 
 #knowledge-check h1 {
   text-align: center;
+  padding-top: 1rem;
+}
+#knowledge-check {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 .kunskap-cont {
   display: flex;
@@ -50,6 +60,11 @@ section {
 #kunskap-summativ > *,
 #kunskap-formativ > * {
   padding: 1rem;
+  color: var(--black-color);
+}
+#kunskap-summativ ul,
+#kunskap-formativ ul {
+  margin-left: 20px;
 }
 #kunskap-summativ,
 #kunskap-formativ {
@@ -63,14 +78,14 @@ section {
 }
 
 .k-btn {
-  background-color: var(--secondary-color);
+  background-color: var(--gray-color);
   border: none;
   padding: 5px 25px;
   border-radius: 30px;
   cursor: pointer;
 }
 .k-active {
-  background-color: var(--gray-color);
+  background-color: var(--secondary-color);
 }
 .k-hidden {
   opacity: 0;
