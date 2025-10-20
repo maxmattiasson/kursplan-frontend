@@ -218,10 +218,33 @@ footer .portrait {
   );
 }
 
+/* Hero section (in header) */
+
+#hero {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/hero-small.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+  }
+}
+
+/* Media queries */
+
 @media only screen and (min-width: 680px) {
   section {
     padding: 4rem;
   }
+  #hero {
+    background-image: url(assets/hero.png);
 
   footer {
     display: flex;
