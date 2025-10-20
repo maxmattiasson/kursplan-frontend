@@ -205,6 +205,7 @@ button:focus {
 }
 #grades p {
   margin-top: 1rem;
+  color: var(--black-color);
 }
 #gradingTitle {
   cursor: pointer;
@@ -215,16 +216,56 @@ button:focus {
 }
 #grades {
   display: none;
-  color: var(--black-color);
+  color: var(--accent-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.3s ease;
 }
 #grades.active {
   display: block;
 }
-#grading-support {
-  border-radius: 6px;
+#grading {
+  padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
 }
+/* Support*/
+#grading-support {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#supports li {
+  margin: 1rem;
+}
+#supports p {
+  margin-top: 1rem;
+  color: var(--accent-color);
+}
+#supportTitle {
+  cursor: pointer;
+  font-size: large;
+}
+#supportTitle:hover {
+  color: var(--secondary-color);
+}
+#supports {
+  display: none;
+  color: var(--black-color);
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+#supports.active {
+  display: block;
+}
+
+#support {
+  padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
 /* Footer */
 
 footer {
@@ -306,7 +347,21 @@ footer .portrait {
 }
 
 /* Media queries */
-
+@media only screen and (min-width: 1024px) {
+  #grading {
+    width: 666px;
+  }
+  #support {
+    width: 666px;
+  }
+  #grading-support {
+    display: flex;
+    justify-content: center;
+  }
+  .col-1 {
+    flex: 1;
+  }
+}
 @media only screen and (min-width: 680px) {
   section {
     padding: 4rem;
