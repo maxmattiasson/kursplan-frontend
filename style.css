@@ -137,10 +137,8 @@ nav a {
 
 /* heading style */
 
-.slide,
-.heading {
+.slides-container {
   background: #f9f9f9;
-
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   padding: 2rem;
@@ -148,7 +146,7 @@ nav a {
 }
 
 /* have to specify cause i choose white background and the default p color is white too */
-.heading p {
+.slides-container p {
   color: var(--black-color);
 }
 .slide ol {
@@ -159,7 +157,23 @@ nav a {
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
+.heading{
+  text-align: center;
+}
 
+.slide{
+  background: linear-gradient(50deg, var(--gray-color), var(--secondary-color));
+ /* background: var(--secondary-color); */
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.button-container{
+  display:flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
 button {
   padding: 15px 20px;
   margin: 10px 5px;
@@ -173,11 +187,15 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover {
+/* will be highlighed when clicked and opened */
+button:hover, 
+button:focus {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
+
+
 /* Grades*/
 #wellDone {
   margin-left: 1rem;
