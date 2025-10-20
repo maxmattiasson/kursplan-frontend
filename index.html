@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <section id="learning-knowledge">
-        <div id="learning-goals">
+    <nav>
+      <ul>
+        <li><a href="#learning-knowledge">Lärandemål</a></li>
+        <li><a href="#knowledge-check">Kunskapskontroll</a></li>
+        <li><a href="#knowledge-check">Betygskriterier</a></li>
+        <li><a href="#program-info">Programinformation</a></li>
+      </ul>
+    </nav>
+    <header>
+      <section id="hero">
+        <img src="assets/hero.png" alt="A hero image showing the text &quot;Frontend&quot; and people standing and sitting around and on top of the large letters studying on their laptops." />
+      </section>
+    </header>
+    <section id="#learning-knowledge">  
+      <div id="learning-goals">
+        <div class="heading">
+          <h2>Lärandemål</h2>
+          <p>Vid avslutad kurs med godkända resultat, kan den studerande:</p>
+          <button id="prev-slide" type="button">Kunskaper</button>
+          <button id="next-slide" type="button">Färdigheter</button>
+        </div>
           <div class="slides-container">
 
             <div class="heading">
@@ -116,6 +133,8 @@
        
         </div>
 </div>
+</section>
+  <section id="knowledge">
         <div id="knowledge-check">
           <h1>Kunskapskontroll</h1>
           <div class="kunskap-buttons">
@@ -257,6 +276,7 @@
           </div>
           <div class="member">
             <img
+              id="elias-portrait"
               class="portrait"
               src="/assets/images/elias-johansson.jpg"
               alt="Elias Johansson"
@@ -275,6 +295,7 @@
           <div class="member">
             <img
               class="portrait"
+              id="max-portrait"
               src="/assets/images/max-mattiasson.png"
               alt="Max Mattiasson"
             />
@@ -291,7 +312,9 @@
         </div>
       </div>
     </footer>
+    <script src="elias.js"></script>
     <script src="script.js"></script>
     <script src="isabelle.js"></script>
+    <script src="max.js"></script>
   </body>
 </html>
