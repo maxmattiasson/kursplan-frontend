@@ -40,6 +40,7 @@ section {
   margin: 2rem 0;
 }
 /* Kunskapskontroll */
+
 #knowledge-check h1 {
   text-align: center;
 }
@@ -74,6 +75,7 @@ section {
 .k-hidden {
   opacity: 0;
   max-width: 0;
+  max-height: 0;
 }
 /* lärendemål layout -yanna */
 
