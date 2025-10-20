@@ -19,6 +19,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Typography */
 
 h1,
@@ -38,7 +42,31 @@ section {
   background-color: var(--primary-color);
   padding: 2rem;
   margin: 2rem 0;
+  scroll-margin-top: 20px;
 }
+
+/* Navbar */
+
+nav {
+  flex-direction: column;
+  background-color: var(--accent-color);
+  padding: 1rem;
+  justify-content: center;
+}
+
+nav ul {
+  padding-top: 0.5rem;
+  list-style-type: none;
+}
+nav li {
+  padding: 0.5rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 /* Kunskapskontroll */
 
 #knowledge-check h1 {
@@ -319,6 +347,21 @@ footer .portrait {
   section {
     padding: 4rem;
   }
+
+  nav {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: flex-end;
+  }
+  nav ul {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+  }
+  nav li {
+    padding-left: 1rem;
+  }
+
   #hero {
     background-image: url(assets/hero.png);
   }
