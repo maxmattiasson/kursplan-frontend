@@ -39,7 +39,7 @@ p {
 /* Layout */
 
 section {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 2rem;
   margin: 2rem 0;
   scroll-margin-top: 20px;
@@ -209,30 +209,30 @@ button:focus {
 #gradingTitle {
   cursor: pointer;
   font-size: large;
-  transition:color 0.3s ease;
+  transition: color 0.3s ease;
 }
 #gradingTitle:hover {
   color: var(--secondary-color);
 }
-#gradingTitle.active{
+#gradingTitle.active {
   color: var(--secondary-color);
 }
 #grades {
   /* display: none; */
-  max-height:0px;
-  opacity:0;
+  max-height: 0px;
+  opacity: 0;
   color: var(--accent-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.3s ease;
 }
 #grades.active {
-  max-height:50vh;
-  position:static;
-  opacity:1;
+  max-height: 50vh;
+  position: static;
+  opacity: 1;
 }
 #grading {
   padding: 1rem;
-  background-color: var(--white-color);
+  background-color: #f9f9f9;
   border-radius: 1rem;
   box-shadow: 2px 2px;
 }
@@ -253,30 +253,30 @@ button:focus {
 #supportTitle {
   cursor: pointer;
   font-size: large;
-  transition:color .5s ease;
+  transition: color 0.5s ease;
 }
 #supportTitle:hover {
   color: var(--secondary-color);
 }
-#supportTitle.active{
-  color:var(--secondary-color);
+#supportTitle.active {
+  color: var(--secondary-color);
 }
 #supports {
-  max-height:0;
-  opacity:0;
+  max-height: 0;
+  opacity: 0;
   color: var(--black-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.5s ease;
 }
 #supports.active {
   max-height: 50vh;
-  opacity:1;
+  opacity: 1;
   display: block;
 }
 
 #support {
   padding: 1rem;
-  background-color: var(--white-color);
+  background-color: #f9f9f9;
   border-radius: 1rem;
   margin-top: 1rem;
   box-shadow: 2px 2px;
@@ -425,9 +425,11 @@ footer .portrait {
   }
   #grading {
     width: 800px;
+    background-color: #f9f9f9;
   }
   #support {
     width: 800px;
+    background-color: #f9f9f9;
   }
   #grading-support {
     display: flex;
