@@ -1,11 +1,4 @@
-// support
-const dropdown = document.getElementById("supports");
-const title = document.getElementById("supportTitle");
 
-title.addEventListener("click", () => {
-  dropdown.classList.toggle("active");
-  title.classList.toggle("active");
-});
 
 const kunskapBtn = document.querySelectorAll(".k-btn");
 const summativBtn = document.getElementById("btn-summativ");
@@ -65,4 +58,13 @@ const titleGrades = document.getElementById("gradingTitle");
 titleGrades.addEventListener("click", () => {
   dropdownGrades.classList.toggle("active");
   titleGrades.classList.toggle("active");
+});
+
+// support
+const dropdown = document.getElementById("supports");
+const title = document.getElementById("supportTitle");
+
+title.addEventListener("click", () => {
+  dropdown.classList.toggle("active");
+  title.classList.toggle("active");
 });
