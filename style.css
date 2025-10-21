@@ -209,18 +209,26 @@ button:focus {
 #gradingTitle {
   cursor: pointer;
   font-size: large;
+  transition:color 0.3s ease;
 }
 #gradingTitle:hover {
   color: var(--secondary-color);
 }
+#gradingTitle.active{
+  color: var(--secondary-color);
+}
 #grades {
-  display: none;
+  /* display: none; */
+  max-height:0px;
+  opacity:0;
   color: var(--accent-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.3s ease;
 }
 #grades.active {
-  display: block;
+  max-height:50vh;
+  position:static;
+  opacity:1;
 }
 #grading {
   padding: 1rem;
@@ -245,17 +253,24 @@ button:focus {
 #supportTitle {
   cursor: pointer;
   font-size: large;
+  transition:color .5s ease;
 }
 #supportTitle:hover {
   color: var(--secondary-color);
 }
+#supportTitle.active{
+  color:var(--secondary-color);
+}
 #supports {
-  display: none;
+  max-height:0;
+  opacity:0;
   color: var(--black-color);
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition: max-height 0.4s ease, opacity 0.5s ease;
 }
 #supports.active {
+  max-height: 50vh;
+  opacity:1;
   display: block;
 }
 
