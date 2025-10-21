@@ -330,6 +330,14 @@ footer .portrait {
   object-position: 50% 10%;
 }
 
+#bjorn {
+  overflow: hidden;
+  background: url("/assets/images/bjorn-boman.jpg") center;
+  background-clip: content-box;
+  background-size: 4.5rem;
+  background-repeat: repeat-y;
+}
+
 .divider {
   width: 80%;
   margin: 1.5rem auto;
