@@ -428,6 +428,8 @@ footer .portrait {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
   }
+}
+@media only screen and (min-width: 900px) {
   #grading {
     width: 800px;
     background-color: #f9f9f9;
