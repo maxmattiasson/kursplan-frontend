@@ -138,6 +138,7 @@ nav a {
   gap: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  scroll-margin-top: 100px;
 }
 
 /* heading style */
