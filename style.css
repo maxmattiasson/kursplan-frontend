@@ -95,11 +95,16 @@ nav a {
 #kunskap-formativ ul {
   margin-left: 20px;
 }
+#kunskap-summativ li,
+#kunskap-formativ li {
+  margin-bottom: 5px;
+}
 #kunskap-summativ,
 #kunskap-formativ {
   transition: opacity 1s ease;
   overflow: hidden;
 }
+
 .kunskap-buttons {
   display: flex;
   justify-content: center;
