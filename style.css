@@ -143,18 +143,22 @@ nav a {
   gap: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 1rem;
   scroll-margin-top: 100px;
+  background: var(--background-color);
 }
 
+#prev-slider {
+background-color: var(--secondary-color);
+}
 /* heading style */
 
-.slides-container {
-  background: var(--background-color);
+/* .slides-container {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   padding: 2rem;
   margin-bottom: 1rem;
-}
+} */
 
 /* have to specify cause i choose white background and the default p color is white too */
 .slides-container p {
@@ -173,7 +177,7 @@ nav a {
 }
 
 .slide {
-  background: linear-gradient(50deg, var(--gray-color), var(--secondary-color));
+  /* background: linear-gradient(50deg, var(--gray-color), var(--secondary-color)); */
   /* background: var(--secondary-color); */
   border-radius: 10px;
   padding: 1rem;
@@ -382,15 +386,14 @@ footer .portrait {
 }
 
 #darkMode {
-  width: 1rem;
+  border-radius: 50%;
+  margin-left: auto;
   color: var(--black-color);
   background-color: var(--white-color);
+  justify-self: end;
+
 }
 
-#darkModeButtonDiv {
-  display: flex;
-  justify-content: end;
-}
 
 /* Media queries */
 
@@ -402,12 +405,15 @@ footer .portrait {
   nav {
     display: flex;
     padding: 1rem 2rem;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: baseline;
   }
   nav ul {
     flex-direction: row;
     display: flex;
     list-style: none;
+    /* justify-content: space-around; */
+    align-items: baseline;
   }
   nav li {
     padding-left: 1rem;

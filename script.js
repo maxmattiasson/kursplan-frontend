@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("next-slide");
   let currentSlide = 0;
 
+
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.style.display = i === index ? "block" : "none";
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentSlide > 0) {
       currentSlide--;
       showSlide(currentSlide);
+
     }
   });
 
