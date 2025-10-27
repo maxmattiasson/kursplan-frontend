@@ -39,7 +39,7 @@ p {
 /* Layout */
 
 section {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 2rem;
   margin: 2rem 0;
   scroll-margin-top: 20px;
@@ -210,23 +210,32 @@ button:focus {
 #gradingTitle {
   cursor: pointer;
   font-size: large;
+  transition: color 0.3s ease;
 }
 #gradingTitle:hover {
   color: var(--secondary-color);
 }
+#gradingTitle.active {
+  color: var(--secondary-color);
+}
 #grades {
-  display: none;
+  /* display: none; */
+  max-height: 0px;
+  opacity: 0;
   color: var(--accent-color);
   overflow: hidden;
   transition: max-height 0.4s ease, opacity 0.3s ease;
 }
 #grades.active {
-  display: block;
+  max-height: 50vh;
+  position: static;
+  opacity: 1;
 }
 #grading {
   padding: 1rem;
-  background-color: var(--white-color);
+  background-color: #f9f9f9;
   border-radius: 1rem;
+  box-shadow: 2px 2px;
 }
 /* Support*/
 #grading-support {
@@ -245,25 +254,33 @@ button:focus {
 #supportTitle {
   cursor: pointer;
   font-size: large;
+  transition: color 0.5s ease;
 }
 #supportTitle:hover {
   color: var(--secondary-color);
 }
+#supportTitle.active {
+  color: var(--secondary-color);
+}
 #supports {
-  display: none;
+  max-height: 0;
+  opacity: 0;
   color: var(--black-color);
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition: max-height 0.4s ease, opacity 0.5s ease;
 }
 #supports.active {
+  max-height: 50vh;
+  opacity: 1;
   display: block;
 }
 
 #support {
   padding: 1rem;
-  background-color: var(--white-color);
+  background-color: #f9f9f9;
   border-radius: 1rem;
   margin-top: 1rem;
+  box-shadow: 2px 2px;
 }
 
 /* Footer */
@@ -314,6 +331,14 @@ footer .portrait {
   object-position: 50% 10%;
 }
 
+#bjorn {
+  overflow: hidden;
+  background: url("/assets/images/tn-bjorn-boman.jpg") center;
+  background-clip: content-box;
+  background-size: 4.5rem;
+  background-repeat: repeat-y;
+}
+
 .divider {
   width: 80%;
   margin: 1.5rem auto;
@@ -347,21 +372,7 @@ footer .portrait {
 }
 
 /* Media queries */
-@media only screen and (min-width: 1024px) {
-  #grading {
-    width: 666px;
-  }
-  #support {
-    width: 666px;
-  }
-  #grading-support {
-    display: flex;
-    justify-content: center;
-  }
-  .col-1 {
-    flex: 1;
-  }
-}
+
 @media only screen and (min-width: 680px) {
   section {
     padding: 4rem;
@@ -412,5 +423,18 @@ footer .portrait {
     transform: scale(1.05);
     border-color: var(--secondary-color);
     color: var(--secondary-color);
+  }
+  #grading {
+    width: 800px;
+    background-color: #f9f9f9;
+  }
+  #support {
+    width: 800px;
+    background-color: #f9f9f9;
+  }
+  #grading-support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
