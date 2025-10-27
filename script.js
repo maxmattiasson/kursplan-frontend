@@ -1,8 +1,7 @@
-
-
 const kunskapBtn = document.querySelectorAll(".k-btn");
 const summativBtn = document.getElementById("btn-summativ");
 const formativBtn = document.getElementById("btn-formativ");
+const darkMode = document.getElementById("darkMode");
 
 kunskapBtn.forEach((b) =>
   b.addEventListener("click", () => {
@@ -68,3 +67,8 @@ title.addEventListener("click", () => {
   dropdown.classList.toggle("active");
   title.classList.toggle("active");
 });
+function darkModeToggle() {
+  var element = document.documentElement;
+  element.classList.toggle("dark-mode");
+}
+darkMode.addEventListener("click", darkModeToggle);
